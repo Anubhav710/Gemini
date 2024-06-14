@@ -32,7 +32,7 @@ const Main = () => {
             </h1>
           </div>
           {/* Middle Container  */}
-          <div className=" grid md:grid-cols-4 grid-cols-2 mt-10 gap-3 hidden ">
+          <div className=" md:grid md:grid-cols-4 hidden mt-10 gap-3 ">
             <Cards
               title="Help me compare these collage majors"
               icon={<BsLightbulb className="w-5 h-5" />}
@@ -53,7 +53,7 @@ const Main = () => {
         </div>
       )}
       {/* Bottom Container  */}
-      <div className="   w-full relative  my-5  ">
+      <div className="   w-full relative mb-6   ">
         <form action={data.onSent}>
           <textarea
             className="resize-none w-full overflow-y-hidden  rounded-full py-5 px-7 text-white outline-none bg-[#1E1F20]"
