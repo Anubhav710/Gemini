@@ -32,7 +32,7 @@ const Main = () => {
             </h1>
           </div>
           {/* Middle Container  */}
-          <div className=" grid md:grid-cols-4 grid-cols-2 mt-10 gap-3 ">
+          <div className=" grid md:grid-cols-4 grid-cols-2 mt-10 gap-3 hidden ">
             <Cards
               title="Help me compare these collage majors"
               icon={<BsLightbulb className="w-5 h-5" />}
