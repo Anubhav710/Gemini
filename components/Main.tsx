@@ -17,22 +17,22 @@ const Main = () => {
   const data = useMessageContext();
 
   return (
-    <section className=" h-[100vh] pt-[150px]   w-[70%]  md:max-w-screen-md  lg:max-w-screen-lg mx-auto relative   ">
+    <section className=" h-[100vh] pt-[150px] pl-10   w-[70%]  md:max-w-screen-md  lg:max-w-screen-lg mx-auto relative   ">
       {data.showResult ? (
         <Converstation />
       ) : (
-        <div>
+        <div className=" overflow-hidden">
           {/* Top Container  */}
           <div>
-            <h1 className=" greet text-6xl font-semibold mb-3  ">
+            <h1 className=" greet md:text-6xl text-4xl font-semibold mb-3  ">
               Hello, Anubhav
             </h1>
-            <h1 className=" text-6xl font-semibold text-[#444746] ">
+            <h1 className=" md:text-6xl text-4xl font-semibold text-[#444746] ">
               How can I help you today?
             </h1>
           </div>
           {/* Middle Container  */}
-          <div className=" flex justify-evenly space-x-2 mt-20 lg:space-x-4 ">
+          <div className=" grid md:grid-cols-4 grid-cols-2 mt-10 gap-3 ">
             <Cards
               title="Help me compare these collage majors"
               icon={<BsLightbulb className="w-5 h-5" />}
@@ -53,7 +53,7 @@ const Main = () => {
         </div>
       )}
       {/* Bottom Container  */}
-      <div className="absolute w-full bottom-10">
+      <div className="absolute w-full bottom-10  ">
         <form action={data.onSent}>
           <textarea
             className="resize-none w-full overflow-y-hidden  rounded-full py-5 px-7 text-white outline-none bg-[#1E1F20]"
