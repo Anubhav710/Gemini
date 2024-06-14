@@ -17,13 +17,13 @@ const Main = () => {
   const data = useMessageContext();
 
   return (
-    <section className=" h-[100vh] pt-[150px] pl-10   w-[70%]  md:max-w-screen-md  lg:max-w-screen-lg mx-auto relative   ">
+    <section className=" h-[100vh] pt-[150px] pr-5 pl-10  flex flex-col justify-between  w-[70%]  md:max-w-screen-md  lg:max-w-screen-lg mx-auto relative   ">
       {data.showResult ? (
         <Converstation />
       ) : (
-        <div className=" overflow-hidden">
+        <div className="  overflow-hidden">
           {/* Top Container  */}
-          <div>
+          <div className=" ">
             <h1 className=" greet md:text-6xl text-4xl font-semibold mb-3  ">
               Hello, Anubhav
             </h1>
@@ -53,7 +53,7 @@ const Main = () => {
         </div>
       )}
       {/* Bottom Container  */}
-      <div className="absolute w-full bottom-10  ">
+      <div className="   w-full relative  my-5  ">
         <form action={data.onSent}>
           <textarea
             className="resize-none w-full overflow-y-hidden  rounded-full py-5 px-7 text-white outline-none bg-[#1E1F20]"
@@ -67,7 +67,7 @@ const Main = () => {
           <div>
             <button
               type="submit"
-              className="text-white w-7 h-10 absolute right-3 bottom-3 cursor-pointer"
+              className="text-white w-7 h-10 absolute right-3 bottom-4 cursor-pointer"
             >
               <AiOutlineSend className="w-6 h-6" />
             </button>
